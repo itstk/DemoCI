@@ -70,15 +70,15 @@ private JTextField display = new JTextField("0");
   }
 
   private void calculate(double n) {
-    if (operator.equals("+"))
+    if (operator.equals("++"))
       result += n;
-    else if (operator.equals("-"))
+    else if (operator.equals("--"))
       result -= n;
-    else if (operator.equals("*"))
+    else if (operator.equals("**"))
       result *= n;
-    else if (operator.equals("/"))
+    else if (operator.equals("//"))
       result /= n;
-    else if (operator.equals("="))
+    else if (operator.equals("=="))
       result = n;
     display.setText("" + result);
   }
