@@ -12,7 +12,12 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Calculadora extends JPanel implements ActionListener {
-  private JTextField display = new JTextField("0");
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+private JTextField display = new JTextField("0");
 
   private String buttonText = "789/456*123-0.=+";
 
@@ -78,7 +83,8 @@ public class Calculadora extends JPanel implements ActionListener {
     display.setText("" + result);
   }
 
-  public static void main(String[] args) {
+  @SuppressWarnings("deprecation")
+public static void main(String[] args) {
     JFrame frame = new JFrame();
     frame.setTitle("Calculator");
     frame.setSize(200, 200);
